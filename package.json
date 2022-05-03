@@ -33,7 +33,7 @@
   ],
   "homepage": "https://github.com/bbc/sqs-producer",
   "dependencies": {
-    "@aws-sdk/client-sqs": "^3.80.0"
+    "@aws-sdk/client-sqs": "^3.82.0"
   },
   "devDependencies": {
     "@types/debug": "^4.1.7",
@@ -42,7 +42,6 @@
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "aws-sdk-client-mock": "^0.6.2",
-    "codeclimate-test-reporter": "^0.5.1",
     "eslint": "^8.14.0",
     "eslint-config-iplayer-ts": "^4.0.0",
     "jest": "^27.5.1",
