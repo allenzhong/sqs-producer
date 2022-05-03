@@ -1,7 +1,7 @@
 {
-  "name": "sqs-producer",
-  "version": "2.1.0",
-  "description": "Enqueues messages onto a given SQS queue",
+  "name": "@allenzhong/sqs-producer",
+  "version": "0.0.1",
+  "description": "Enhanced tools that enqueues messages onto a given SQS queue",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -19,11 +19,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bbc/sqs-producer.git"
+    "url": "https://github.com/allenzhong/sqs-producer.git"
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/bbc/sqs-producer/issues"
+    "url": "https://github.com/allenzhong/sqs-producer/issues"
   },
   "keywords": [
     "aws",
@@ -31,7 +31,7 @@
     "producer",
     "queue"
   ],
-  "homepage": "https://github.com/bbc/sqs-producer",
+  "homepage": "https://github.com/allenzhong/sqs-producer",
   "dependencies": {
     "@aws-sdk/client-sqs": "^3.82.0"
   },
