@@ -68,14 +68,14 @@ export class Producer {
 
     const command = new SendMessageBatchCommand(params);
     const result = await this.sqs.send(command);
-    const failedMessagesBatch = failedMessages.concat(result.Failed.map((entry) => entry.Id));
+    const failedMessagesBatch = result.Failed && failedMessages.concat(result.Failed.map((entry) => entry.Id));
     const successfulMessagesBatch = successfulMessages.concat(result.Successful);
 
     if (endIndex < messages.length) {
       return this.sendBatch(failedMessagesBatch, successfulMessagesBatch, messages, endIndex);
     }
 
-    if (failedMessagesBatch.length === 0) {
+    if (!failedMessagesBatch || failedMessagesBatch.length === 0) {
       return successfulMessagesBatch;
     }
     throw new Error(`Failed to send messages: ${failedMessagesBatch.join(', ')}`);
