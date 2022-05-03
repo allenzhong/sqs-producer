@@ -1,6 +1,6 @@
 {
   "name": "@allenzhong/sqs-producer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Enhanced tools that enqueues messages onto a given SQS queue",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
