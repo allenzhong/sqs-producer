@@ -1,6 +1,6 @@
 {
   "name": "@allenzhong/sqs-producer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Enhanced tools that enqueues messages onto a given SQS queue",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,9 +13,6 @@
     "pretest": "npm run build",
     "watch": "tsc --watch",
     "clean": "rm -fr dist/*"
-  },
-  "publishConfig": {
-    "@allenzhong:registry": "https://npm.pkg.github.com"
   },
   "engines": {
     "node": ">=12.0.0"
