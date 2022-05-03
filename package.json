@@ -14,6 +14,9 @@
     "watch": "tsc --watch",
     "clean": "rm -fr dist/*"
   },
+  "publishConfig": {
+    "@allenzhong:registry": "https://npm.pkg.github.com"
+  },
   "engines": {
     "node": ">=12.0.0"
   },
